@@ -11,6 +11,6 @@ dotenv.config();
 app.use(express.json());
 app.use(morgan("dev"));
 
-app.use("/api/clientes", clienteRoutes);
+app.use("/api", clienteRoutes);
 
 export const server = app;

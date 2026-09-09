@@ -4,7 +4,7 @@ import pg from 'pg';
 dotenv.config()
 const { Pool } = pg
 
-export default ( async() => {
+export default (async () => {
     try {
         const pool = new Pool({
             user: process.env.DB_USER,
@@ -17,5 +17,6 @@ export default ( async() => {
         console.log('Base de datos conectada correctamente')
     } catch (error) {
         console.error('Error al conectar a la base de datos: \n', error)
+        process.exit(1)
     }
-})
+})()
