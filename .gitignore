@@ -5,3 +5,6 @@ dist/
 package-lock.json
 pnpm-lock.yaml
 database/user.db
+.scannerwork
+.sonarlint
+sonar-project.properties
