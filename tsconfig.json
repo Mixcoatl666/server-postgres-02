@@ -5,11 +5,10 @@
     "rootDir": "./src", // ? Carpeta raíz de código fuente
     "strict": true,
     "esModuleInterop": true,
-    "moduleResolution": "node",
-    "module": "CommonJS",
-    "baseUrl": "./src", // ? Base para los alias
+    "moduleResolution": "Node16",
+    "module": "Node16",
     "paths": {
-      "@*": ["*"]
+      "@*": ["./src/*"]
     },
     "typeRoots": ["@types", "./node_modules/@types"]
   },
